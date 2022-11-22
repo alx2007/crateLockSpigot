@@ -4,15 +4,6 @@ main: org.example.Main
 api-version: "1.16"
 
 commands:
-  kit:
-    description: "Test command giving a stack of diamonds"
-    usage: "/<command>"
-    aliases: []
-
-  gettargeted:
-    description: "Prints targeted block type"
-    usage: "/<command>"
-    aliases: []
 
   lock:
     description: "Locks the chest looked at"
