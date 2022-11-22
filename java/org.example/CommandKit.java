@@ -23,19 +23,6 @@ public class CommandKit implements CommandExecutor {
         if (sender instanceof Player) {
             player = (Player) sender;
 
-            // KIT
-            if (command.getName().equalsIgnoreCase("kit")) {
-                ItemStack diamonds = new ItemStack(Material.DIAMOND, 64);
-                player.getInventory().addItem(diamonds);
-            }
-
-            // GETTARGETED
-            if (command.getName().equalsIgnoreCase("gettargeted")) {
-                String material = this.getTargetedBlock().getType().name();
-
-                Bukkit.broadcastMessage(material);
-            }
-
             // LOCK
             if (command.getName().equalsIgnoreCase("lock")) {
                 Block targetedBlock = this.getTargetedBlock();
